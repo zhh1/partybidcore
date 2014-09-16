@@ -13,3 +13,8 @@ Activity.prototype.create = function() {
 Activity.prototype.active = function() {
     localStorage.current_activity = this.name;
 };
+
+Activity.get_current_activity = function () {
+    var activities = JSON.parse(localStorage.activities);
+    return _.find(activities,{name:localStorage.current_activity})
+};

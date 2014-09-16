@@ -10,7 +10,7 @@ describe("SignUp", function() {
 
     afterEach(function(){
         localStorage.clear();
-    })
+    });
 
 
     it("should one sms with signing up content sign up successfully when it is signing up", function(){
@@ -26,6 +26,7 @@ describe("SignUp", function() {
     it("should one sms with signing up content sign up failed when user has signed", function(){
         var sms_json = build_sms_json("BM仝键", "13600000000");
         localStorage.is_signing_up = "true";
+
         notify_sms_received(sms_json);
         notify_sms_received(sms_json);
 

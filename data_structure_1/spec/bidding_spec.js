@@ -51,7 +51,7 @@ describe("Bidding", function() {
 
         var activities = JSON.parse(localStorage.activities);
         expect(activities[1].bids.length).toBe(1);
-        expect(activities[1].bids[0].biddings[0].name).toBe("仝键");
+        expect(activities[1].bids[0].biddings[0].person_name).toBe("仝键");
         expect(activities[1].bids[0].biddings[0].phone).toBe(phone_no);
         expect(activities[1].bids[0].biddings[0].price).toBe("12");
     });
@@ -98,7 +98,7 @@ describe("Bidding", function() {
 
         var activities = JSON.parse(localStorage.activities);
         expect(activities[1].bids[0].biddings.length).toBe(1);
-        expect(activities[1].bids[0].biddings[0].name).toBe("仝键");
+        expect(activities[1].bids[0].biddings[0].person_name).toBe("仝键");
         expect(activities[1].bids[0].biddings[0].phone).toBe(phone_no);
         expect(activities[1].bids[0].biddings[0].price).toBe("12");
     });

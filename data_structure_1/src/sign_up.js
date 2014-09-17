@@ -10,6 +10,12 @@ SignUp.sign_up = function(sign_up) {
     }
 };
 
+SignUp.judge_signing_up = function(sign_up){
+    if(localStorage.is_signing_up == "true") {
+        SignUp.sign_up(sign_up);
+    }
+};
+
 SignUp.prototype.process_sms_json = function() {
     var activities = JSON.parse(localStorage.activities);
     _.each(activities,function(item) {

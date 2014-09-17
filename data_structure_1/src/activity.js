@@ -18,3 +18,7 @@ Activity.get_current_activity = function () {
     var activities = JSON.parse(localStorage.activities);
     return _.find(activities,{name:localStorage.current_activity})
 };
+
+Activity.set_signing_up = function() {
+    localStorage.is_signing_up = "";
+};

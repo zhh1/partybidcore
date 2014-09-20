@@ -56,3 +56,15 @@ Bid.bid_success = function(sms) {
     })
 };
 
+Bid.find_by_id = function(id) {
+    return _.where(Bid.get_bid(),function(item) {
+        return item.activity_id == id;
+    })
+};
+
+Bid.get_current_bid = function(id,bid_name) {
+    return _.where(Bid.get_bid(),function(item) {
+        return item.activity_id == id && item.name == bid_name;
+    })
+};
+

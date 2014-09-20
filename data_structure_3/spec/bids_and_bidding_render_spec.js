@@ -27,11 +27,13 @@ describe("Bids and Bidding Render", function() {
                 activity_id:"1",
                 biddings:[
                     {
+                        name:'仝',
                         phone:"13600000000",
                         price: "12"
 
                     },
                     {
+                        name:"于",
                         phone:"15600000000",
                         price: "10"
                     }
@@ -43,15 +45,18 @@ describe("Bids and Bidding Render", function() {
                 activity_id:"1",
                 biddings:[
                     {
+                        name:'仝',
                         phone:"13600000000",
                         price: "10"
 
                     },
                     {
+                        name:"于",
                         phone:"15600000000",
                         price: "12"
                     },
                     {
+                        name:"吴",
                         phone:"13800000000",
                         price: "10"
                     }

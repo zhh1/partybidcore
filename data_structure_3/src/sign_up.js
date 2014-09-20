@@ -40,3 +40,15 @@ SignUp.prototype.sign_up = function() {
     }
 };
 
+SignUp.has_signed_up = function(sms) {
+    return _.some(SignUp.get_sign_ups(),function(item) {
+        return item.phone == sms.messages[0].phone;
+    })
+};
+
+SignUp.find_name = function(sms) {
+    return _.find(SignUp.get_sign_ups(),function(item) {
+        return item.phone == sms.messages[0].phone && item.activity_id == localStorage.current_activity;
+    }).name;
+};
+

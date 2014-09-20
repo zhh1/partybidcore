@@ -6,7 +6,7 @@ function init_activity_database(){
 
     localStorage.sign_ups = '[]';
     localStorage.bids = '[]';
-    localStorage.biddings = '[]';
+//    localStorage.biddings = '[]';
 }
 
 

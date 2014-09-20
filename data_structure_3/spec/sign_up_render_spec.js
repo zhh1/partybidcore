@@ -4,8 +4,9 @@ describe("SignUp Render", function() {
     beforeEach(function() {
         init_activity_database();
         init_two_activity();
-        init_sign_ups()
-        localStorage.activities = JSON.stringify(two_activities);
+        init_sign_ups();
+//        localStorage.activities = JSON.stringify(two_activities);
+        var activity_ids = ["0","1"];
         localStorage.activity_ids = JSON.stringify(activity_ids);
         localStorage.current_activity = "1";
     });

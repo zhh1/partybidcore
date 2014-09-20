@@ -13,6 +13,12 @@ SignUp.get_sign_ups = function() {
     return JSON.parse(localStorage.sign_ups);
 };
 
+SignUp.find_by_id = function(id) {
+    return _.where(SignUp.get_sign_ups(),function(item) {
+        return item.activity_id == id;
+    })
+};
+
 SignUp.prototype.judge_is_signing_up = function() {
     return localStorage.is_signing_up == "true";
 };

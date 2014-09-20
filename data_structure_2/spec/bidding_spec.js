@@ -36,9 +36,9 @@ describe("Bidding", function() {
         localStorage.is_bidding = "";
     });
 
-//    afterEach(function(){
-//        localStorage.clear();
-//    });
+    afterEach(function(){
+        localStorage.clear();
+    });
 
     it("should bid successfully when it is bidding and user has signed up", function(){
         var phone_no = "13600000000";

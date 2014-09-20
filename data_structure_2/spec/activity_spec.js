@@ -13,7 +13,6 @@ describe("Activity", function() {
         var activity_name = "first activity";
 
         var activity = new Activity(activity_name);
-        console.log(Activity.get_activity_id());
         activity.create();
 
         var activities_json = JSON.parse(localStorage.activities);
